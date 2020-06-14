@@ -27,8 +27,12 @@ dummy repo to learn advance git commands
 - git restore: made changes to files>not staged>git restore>undo the changes
 - git restore --staged : made changes to files>staged>run command> unstage the changes>changes will remain, just will be removed from the staging area
 
-## Remotes:
+## Commiting files:
+- git commit -m "commit-message"
+- git commit -a -m "commit message": adds the files and commits them
+- **git commit --amend -m "new-commit-message"**: creates a new commit with all the files same but with a "new-commit-message"
 
+## Remotes:
 - **git remote -v**: shows existing remote
 - **git remote add remote-name remote-url**: adds github "remote-url" to the list of existing remotes and names it "remote-name". NOTE: both fetch and push urls are set
 - **git remote set-url remote-name remote-url**: changes the url of the existing remote "remote-name" to "remote-url"
@@ -72,3 +76,9 @@ NOTE: You can't push a branch to origin without making its local branch first, w
 **git branch -d branch-name**: deletes the existing local branch named "branch-name"
 **git branch -D brnach-name**: force delete existing local branch named "branch-name" regardless of merge status. equivalent to git branch --delete --force branch-name
 **git push origin -d branch-name**:deletes from remote branch
+
+
+## Misc:
+**git config --global help.autocorrect 1**: activate autocorrect
+**git log**: show commit history
+**git status**: current status of files
