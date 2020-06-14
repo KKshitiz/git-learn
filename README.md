@@ -25,7 +25,7 @@ dummy repo to learn advance git commands
 ## Unstaging files:
 - git reset -- <path>
 - git restore: made changes to files>not staged>git restore>undo the changes
-
+- git restore --staged : made changes to files>staged>run command> unstage the changes>changes will remain, just will be removed from the staging area
 
 ## Remotes:
 
