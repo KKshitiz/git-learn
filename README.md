@@ -22,6 +22,10 @@ dummy repo to learn advance git commands
 - **git add .**: adds all files to staging area
 - **git add a.txt b.txt c.txt**: adds the given files
 
+## Unstaging files:
+- git reset -- <path>
+- git restore: made changes to files>not staged>git restore>undo the changes
+
 
 ## Remotes:
 
