@@ -86,7 +86,7 @@ dummy repo to learn advance git commands
 - **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
 - **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files. NOTE: Effectively its a git fetch followed by git merge
 - **git pull --rebase <remote-name>**: ![Rebase](rebase.png)
-
+git 
 ## Sending data to remote:
 - **git push origin**: will push changes from all local branches to matching branches the origin remote.
 - **git push origin master**: will push changes from the local master branch to the remote master branch.
