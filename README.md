@@ -89,7 +89,7 @@ dummy repo to learn advance git commands
 git 
 ## Sending data to remote:
 - **git push origin**: will push changes from all local branches to matching branches the origin remote.
-- **git push origin master**: will push changes from the local master branch to the remote master branch.
+- **git push origin master**: will push changes from the local master branch to the remote master branch. Can be run while inside any branch.
 - **git push origin master:staging** will push changes from the local master branch to the remote staging branch if it exists.
 
 ## Misc:
