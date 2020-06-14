@@ -87,6 +87,11 @@ dummy repo to learn advance git commands
 - **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files. NOTE: Effectively its a git fetch followed by git merge
 - **git pull --rebase <remote-name>**: ![Rebase](rebase.png)
 
+## Sending data to remote:
+- **git push origin**: will push changes from all local branches to matching branches the origin remote.
+- **git push origin master**: will push changes from the local master branch to the remote master branch.
+- **git push origin master:staging** will push changes from the local master branch to the remote staging branch if it exists.
+
 ## Misc:
 
 - **git config --global help.autocorrect 1**: activate autocorrect
