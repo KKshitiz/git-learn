@@ -68,7 +68,7 @@ dummy repo to learn advance git commands
 
 - **git branch branch-name**: creates a local branch named "branch-name"
 - **git push origin branch-name**: creates a remote branch name "branch-name". You can now see the branch named "branch-name" in the github repo branches dropdown.
-NOTE: You can't push a branch to origin without making its local branch first, which should have the same name.
+  NOTE: You can't push a branch to origin without making its local branch first, which should have the same name.
 
 #### changing/checking out branches:
 
@@ -81,11 +81,11 @@ NOTE: You can't push a branch to origin without making its local branch first, w
 - **git branch -D brnach-name**: force delete existing local branch named "branch-name" regardless of merge status. equivalent to git branch --delete --force branch-name
 - **git push origin -d branch-name**:deletes from remote branch
 
-
 ## Downloading data from remote:
-- **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
-- **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files
 
+- **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
+- **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files. NOTE: Effectively its a git fetch followed by git merge
+- **git pull --rebase <remote-name>**: ![Rebase](rebase.png)
 
 ## Misc:
 
@@ -93,5 +93,3 @@ NOTE: You can't push a branch to origin without making its local branch first, w
 - **git log**: show commit history
 - **git status**: current status of files
 - **git checkout <SHA>**: revert repo to a previous commit having unique id SHA. Find the SHA from git log
-
-
