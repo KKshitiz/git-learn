@@ -18,21 +18,25 @@ dummy repo to learn advance git commands
 -
 
 ## Adding/Staging Files:
+
 - git add file-name
 - **git add .**: adds all files to staging area
 - **git add a.txt b.txt c.txt**: adds the given files
 
 ## Unstaging files:
+
 - git reset -- <path>
 - git restore: made changes to files>not staged>git restore>undo the changes
 - git restore --staged : made changes to files>staged>run command> unstage the changes>changes will remain, just will be removed from the staging area
 
 ## Commiting files:
+
 - git commit -m "commit-message"
 - git commit -a -m "commit message": adds the files and commits them
 - **git commit --amend -m "new-commit-message"**: creates a new commit with all the files same but with a "new-commit-message"
 
 ## Remotes:
+
 - **git remote -v**: shows existing remote
 - **git remote add remote-name remote-url**: adds github "remote-url" to the list of existing remotes and names it "remote-name". NOTE: both fetch and push urls are set
 - **git remote set-url remote-name remote-url**: changes the url of the existing remote "remote-name" to "remote-url"
@@ -62,23 +66,32 @@ dummy repo to learn advance git commands
 
 #### creating branches:
 
-**git branch branch-name**: creates a local branch named "branch-name"
-**git push origin branch-name**: creates a remote branch name "branch-name". You can now see the branch named "branch-name" in the github repo branches dropdown.
+- **git branch branch-name**: creates a local branch named "branch-name"
+- **git push origin branch-name**: creates a remote branch name "branch-name". You can now see the branch named "branch-name" in the github repo branches dropdown.
 NOTE: You can't push a branch to origin without making its local branch first, which should have the same name.
 
 #### changing/checking out branches:
 
-**git checkout branch-name**: changes branch to "branch-name"
-**git checkout -b branch-name**: creates a branch named "branch-name" and then switches to it.
+- **git checkout branch-name**: changes branch to "branch-name"
+- **git checkout -b branch-name**: creates a branch named "branch-name" and then switches to it.
 
 #### deleting branches:
 
-**git branch -d branch-name**: deletes the existing local branch named "branch-name"
-**git branch -D brnach-name**: force delete existing local branch named "branch-name" regardless of merge status. equivalent to git branch --delete --force branch-name
-**git push origin -d branch-name**:deletes from remote branch
+- **git branch -d branch-name**: deletes the existing local branch named "branch-name"
+- **git branch -D brnach-name**: force delete existing local branch named "branch-name" regardless of merge status. equivalent to git branch --delete --force branch-name
+- **git push origin -d branch-name**:deletes from remote branch
+
+
+## Downloading data from remote:
+- **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
+- **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files
 
 
 ## Misc:
-**git config --global help.autocorrect 1**: activate autocorrect
-**git log**: show commit history
-**git status**: current status of files
+
+- **git config --global help.autocorrect 1**: activate autocorrect
+- **git log**: show commit history
+- **git status**: current status of files
+- **git checkout <SHA>**: revert repo to a previous commit having unique id SHA. Find the SHA from git log
+
+
