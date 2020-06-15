@@ -3,3 +3,4 @@ this is yet another change. <hello this is a new change>
 3rd good feature(changed rubbish feature)
 checking git push on both branches
 added a feature on feature branch
+added 2nd feature on feature branch
