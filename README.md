@@ -3,12 +3,13 @@
 dummy repo to learn advance git commands
 
 ## Working Areas:
+
 - Working directory : This is your local directory where you make the project (write code) and make changes to it.
 - Staging Area (or index) : this is an area where you first need to put your project before committing. This is used for code review by other team members.
 - Local Repository : this is your local repository where you commit changes to the
-project before pushing them to central repository on Github. This is what is provided by distributed version control system. This corresponds to the .git folder in our directory.
+  project before pushing them to central repository on Github. This is what is provided by distributed version control system. This corresponds to the .git folder in our directory.
 - Central Repository : This is the main project on the central server, a copy of which
-is with every team member as local repository.
+  is with every team member as local repository.
 
 ## Creating:
 
@@ -89,23 +90,19 @@ is with every team member as local repository.
 - **git branch -D brnach-name**: force delete existing local branch named "branch-name" regardless of merge status. equivalent to git branch --delete --force branch-name
 - **git push origin -d branch-name**:deletes from remote branch
 
-
-
 ## Downloading data from remote:
 
 - **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
 - **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files. NOTE: Effectively its a git fetch followed by git merge
 - **git pull --rebase <remote-name>**: ![Rebase](rebase.png)
-git 
-
-
+  git
 
 ## Sending data to remote:
+
 - **git push origin**: will push changes from all local branches to matching branches the origin remote.//tried but doesn't work
 - **git push origin master**: will push changes from the local master branch to the remote master branch. Can be run while inside any branch.
 - **git push origin master:staging** will push changes from the local master branch to the remote staging branch if it exists.
-
-
+- **git push --set-upstream origin branch-name**: links the current branch with the branch-name branch on remote repo. Now git push origin in that branch will push the current branch to the corresponding upstream branch
 
 ## Misc:
 
