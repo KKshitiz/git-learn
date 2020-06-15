@@ -11,6 +11,11 @@ dummy repo to learn advance git commands
 - Central Repository : This is the main project on the central server, a copy of which
   is with every team member as local repository.
 
+## What is HEAD?
+
+HEAD is YOU
+HEADis a symbolic reference pointing to wherever you are in your commit history. It follows you wherever you go, whatever you do, like a shadow. If you make a commit, HEAD will move. If you checkout something, HEAD will move. Whatever you do, if you have moved somewhere new in your commit history, HEAD has moved along with you. To address one common misconception: you cannot detach yourself from HEAD. That is not what a detached HEAD state is. If you ever find yourself thinking: "oh no, i'm in detached HEAD state! I've lost my HEAD!" Remember, it's your HEAD. HEAD is you. You haven't detached from the HEAD, you and your HEAD have detached from something else.
+
 ## Creating:
 
 - from scratch(two ways)::no work done on the project till now:
