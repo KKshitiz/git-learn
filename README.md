@@ -100,7 +100,7 @@ HEADis a symbolic reference pointing to wherever you are in your commit history.
 - **git fetch <remote-name>**: checks "remote-name" for new data. But does not change a thing in the local repo. So, can execute as many times w/o any consequences. NOTE: Its like apt-get upgrade
 - **git pull <remote-name> <remote-branch-name>**:pull not only downloads new data; it also directly integrates it into your current working copy files. NOTE: Effectively its a git fetch followed by git merge
 - **git pull --rebase <remote-name>**: ![Rebase](rebase.png)
-  git
+- **git reset --hard <remote-name>/master** : resets the repos local copy of the master to match the latest version of the central repo
 
 ## Sending data to remote:
 
